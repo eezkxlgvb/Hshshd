@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Den — ورود</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container">
+        <div class="login-card">
+            <!-- هدر با آیکون هاسکی -->
+            <div class="header">
+                <div class="husky-icon">
+                    <svg viewBox="0 0 100 100" class="husky-svg">
+                        <circle cx="50" cy="50" r="40" fill="#4a6fa5" />
+                        <ellipse cx="35" cy="40" rx="12" ry="8" fill="white" />
+                        <ellipse cx="65" cy="40" rx="12" ry="8" fill="white" />
+                        <circle cx="35" cy="40" r="5" fill="#1a1a2e" class="eye left-eye" />
+                        <circle cx="65" cy="40" r="5" fill="#1a1a2e" class="eye right-eye" />
+                        <circle cx="35" cy="40" r="2" fill="white" />
+                        <circle cx="65" cy="40" r="2" fill="white" />
+                        <path d="M30 60 Q50 75 70 60" stroke="#1a1a2e" stroke-width="4" fill="none" stroke-linecap="round" />
+                        <ellipse cx="50" cy="30" rx="10" ry="5" fill="#ffb347" />
+                        <circle cx="20" cy="25" r="6" fill="white" />
+                        <circle cx="80" cy="25" r="6" fill="white" />
+                    </svg>
+                </div>
+                <h1>Den</h1>
+                <p class="subtitle">Your husky's keeping watch.</p>
+            </div>
+
+            <!-- فرم ورود -->
+            <form id="loginForm">
+                <div class="input-group">
+                    <label for="username">نام کاربری</label>
+                    <input type="text" id="username" placeholder="frostpup" value="frostpup" />
+                </div>
+                <div class="input-group">
+                    <label for="password">رمز عبور</label>
+                    <input type="password" id="password" placeholder="••••••••" value="12345678" />
+                </div>
+
+                <div class="options">
+                    <label class="remember">
+                        <input type="checkbox" checked /> مرا به خاطر بسپار
+                    </label>
+                    <a href="#" class="forgot">رمز را فراموش کردی؟</a>
+                </div>
+
+                <button type="submit" class="btn" id="loginBtn">
+                    <span class="door">
+                        <span class="door-panel"></span>
+                    </span>
+                    <span class="btn-text">ورود</span>
+                </button>
+
+                <div class="social-login">
+                    <span>یا ادامه با</span>
+                    <div class="social-icons">
+                        <button class="social google">G</button>
+                        <button class="social apple"></button>
+                    </div>
+                </div>
+            </form>
+
+            <div id="message" class="message"></div>
+            <footer>
+                <p>© 2026 Den — همه حقوق محفوظ است</p>
+            </footer>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
